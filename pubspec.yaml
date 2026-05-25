@@ -1,0 +1,51 @@
+name: handee
+description: HANDEE Flutter Application
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  image_picker: ^1.0.7
+  shared_preferences: ^2.2.2
+
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+
+  camera: ^0.10.5+9
+  tflite_flutter: 0.11.0
+
+  google_mlkit_pose_detection: ^0.11.0
+  google_mlkit_face_detection: ^0.11.0
+
+  video_player: ^2.10.0
+  speech_to_text: ^7.3.0
+  flutter_tts: ^4.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/model/model.tflite
+    - assets/model/sign_to_prediction_index_map.json
+    - assets/asl/
+    - assets/signs/
+    - assets/signs_cropped/
+    - assets/signs_final_300/
+    - assets/signs_cutout/
+    - assets/words/unity_words.txt

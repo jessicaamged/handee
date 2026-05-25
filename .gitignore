@@ -1,0 +1,71 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Large binary files (Unity native libs, APKs)
+*.apk
+*.so
+*.a
+*.zip
+assets/app.apk
+
+# Unity build artifacts and large binaries
+android/unityLibrary/UnityExport/unityLibrary/build/
+android/unityLibrary/UnityExport/unityLibrary/symbols/
+android/unityLibrary/UnityExport/unityLibrary/src/main/jniLibs/
+android/unityLibrary/UnityExport/unityLibrary/src/main/jniStaticLibs/
+android/unityLibrary/UnityExport/unityLibrary/src/main/Il2CppOutputProject/
+android/unityLibrary/UnityExport/unityLibrary/src/main/assets/bin/Data/data.unity3d
+android/unityLibrary/UnityExport/unityLibrary/src/main/assets/bin/Data/Managed/
+android/UnityExport.zip
+
+# Temp downloads and duplicate data
+temp_downloads/
+assets/signs_clean_300/
+WLASL_v0.3.json
+
+# Python venv
+venv310/
