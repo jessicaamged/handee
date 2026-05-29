@@ -18,11 +18,6 @@ migrate_working_dir/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -45,22 +40,17 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Large binary files (Unity native libs, APKs)
-*.apk
-*.so
-*.a
+# Archives (keep Unity export zip out of repo)
 *.zip
-assets/app.apk
+android/UnityExport.zip
 
-# Unity build artifacts and large binaries
+# Unity IL2CPP source tree (very large; prebuilt .so files are committed instead)
+android/unityLibrary/UnityExport/unityLibrary/src/main/Il2CppOutputProject/
+
+# Unity Gradle build outputs only (not runtime jniLibs / scene data)
 android/unityLibrary/UnityExport/unityLibrary/build/
 android/unityLibrary/UnityExport/unityLibrary/symbols/
-android/unityLibrary/UnityExport/unityLibrary/src/main/jniLibs/
-android/unityLibrary/UnityExport/unityLibrary/src/main/jniStaticLibs/
-android/unityLibrary/UnityExport/unityLibrary/src/main/Il2CppOutputProject/
-android/unityLibrary/UnityExport/unityLibrary/src/main/assets/bin/Data/data.unity3d
-android/unityLibrary/UnityExport/unityLibrary/src/main/assets/bin/Data/Managed/
-android/UnityExport.zip
+android/unityLibrary/UnityExport/.gradle/
 
 # Temp downloads and duplicate data
 temp_downloads/

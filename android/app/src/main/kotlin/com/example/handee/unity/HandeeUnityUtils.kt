@@ -29,7 +29,7 @@ object HandeeUnityUtils {
 
     var pendingMessage: Triple<String, String, String>? = null
 
-    private val legacyTargets = listOf("Hamada", "ASLAnimator", "Avatar")
+    private val legacyTargets = listOf("Hamada", "Avatar")
 
     private val attachListener = object : View.OnAttachStateChangeListener {
         override fun onViewAttachedToWindow(view: View) {

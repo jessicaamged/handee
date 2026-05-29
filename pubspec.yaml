@@ -40,6 +40,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/app.apk
     - assets/images/
     - assets/model/model.tflite
     - assets/model/sign_to_prediction_index_map.json

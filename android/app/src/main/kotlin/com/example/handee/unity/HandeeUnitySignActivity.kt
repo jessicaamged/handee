@@ -17,7 +17,7 @@ class HandeeUnitySignActivity : UnityPlayerActivity() {
         const val EXTRA_WORD = "word"
         private const val PRIMARY_OBJECT = "AvatarController"
         private const val PRIMARY_METHOD = "PlaySign"
-        private val LEGACY_TARGETS = listOf("Hamada", "ASLAnimator", "Avatar")
+        private val LEGACY_TARGETS = listOf("Hamada", "Avatar")
     }
 
     private val handler = Handler(Looper.getMainLooper())

@@ -1,16 +1,57 @@
-# handee
+# Handee
 
-A new Flutter project.
+Flutter app with an embedded Unity ASL avatar on the home screen.
 
-## Getting Started
+## Flow
 
-This project is a starting point for a Flutter application.
+1. Handee splash screen
+2. Home screen with embedded Unity avatar
+3. Type a word and tap **green play** → avatar signs via Unity
+4. **Purple video** button → sign video fallback page
+5. Side icons and bottom navigation (store, history, profile, etc.)
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK (3.x)
+- Android Studio / Android SDK
+- Physical Android device recommended (ARM64)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run
+
+```bash
+cd handee-amanyy
+flutter pub get
+flutter run
+```
+
+If build fails after pulling, run:
+
+```bash
+flutter clean
+flutter pub get
+flutter run
+```
+
+## Unity avatar (included in repo)
+
+This repo includes the **avatar_final2** Unity runtime files required to build without a separate Unity export:
+
+- `android/unityLibrary/UnityExport/unityLibrary/src/main/jniLibs/arm64-v8a/`
+- `android/unityLibrary/UnityExport/unityLibrary/src/main/assets/bin/Data/`
+- `assets/app.apk` (standalone Unity build reference)
+
+Flutter sends signs with:
+
+```dart
+unityWidgetController?.postMessage(
+  'AvatarController',
+  'PlaySign',
+  word,
+);
+```
+
+Legacy fallback: `Hamada` + `ReceiveTextFromFlutter` (used by current Unity scene).
+
+## GitHub
+
+https://github.com/jessicaamged/handee
